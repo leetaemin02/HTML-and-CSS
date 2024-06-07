@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quản Lý Thư Viện - Admin</title>
+    <link rel="stylesheet" href="admin-styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar-container">
+        <div class="navbar-left">
+          <img
+            src="/test/ảnh/1552877108_logo.png"
+            alt="Logo"
+            class="navbar-logo"
+          />
+          <a href="#" class="navbar-brand">Admin Thư Viện VAA</a>
+        </div>
+        <ul class="navbar-menu">
+          <li class="navbar-item">
+            <a href="/test/Trang chủ.html" class="navbar-link">Trang Chủ</a>
+          </li>
+        </ul>
+        <div class="navbar-right">
+          <a href="/test/đăng nhập.html" class="navbar-link">Đăng Xuất</a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <section class="admin-section">
+        <h2>Thêm Sách Mới</h2>
+        <form class="admin-form">
+          <label for="book-title">Tên Sách</label>
+          <input type="text" id="book-title" name="book-title" required />
+
+          <label for="book-author">Tác Giả</label>
+          <input type="text" id="book-author" name="book-author" required />
+
+          <label for="book-genre">Thể Loại</label>
+          <input type="text" id="book-genre" name="book-genre" required />
+
+          <label for="book-code">Mã Sách</label>
+          <input type="text" id="book-code" name="book-code" required />
+
+          <label for="book-quantity">Số lượng</label>
+          <input type="text" id="book-quantity" name="book-quantity" required />
+
+          <label for="book-image">Hình Ảnh Sách</label>
+          <input
+            type="file"
+            id="book-image"
+            name="book-image"
+            accept="image/*"
+            required
+          />
+
+          <button type="submit">Thêm Sách</button>
+        </form>
+      </section>
+
+      <section class="admin-section">
+        <h2>Quản Lý Sách</h2>
+        <table class="admin-table">
+          <thead>
+            <tr>
+              <th>Tên Sách</th>
+              <th>Tác Giả</th>
+              <th>Thể Loại</th>
+              <th>Mã sách</th>
+              <th>Số lượng</th>
+              <th>Hành Động</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Các hàng của bảng sẽ được thêm ở đây -->
+            <tr>
+              <td>Sách 1</td>
+              <td>Tác Giả 1</td>
+              <td>Thể Loại 1</td>
+              <td>123456789</td>
+              <td>10</td>
+              <td>
+                <button class="edit-btn">Sửa</button>
+                <button class="delete-btn">Xóa</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="admin-section">
+        <h2>Quản Lý Người Dùng</h2>
+        <table class="admin-table">
+          <thead>
+            <tr>
+              <th>Tên Người Dùng</th>
+              <th>Email</th>
+              <th>Hành Động</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Các hàng của bảng sẽ được thêm ở đây -->
+            <tr>
+              <td>Người Dùng 1</td>
+              <td>user1@example.com</td>
+              <td>
+                <button class="edit-btn">Sửa</button>
+                <button class="delete-btn">Xóa</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,167 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url("/test/ảnh/inaki-del-olmo-NIJuEQw0RKg-unsplash.jpg");
+}
+
+/* Styles for the navigation bar */
+.navbar {
+  background-color: #034278;
+  color: #fff;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 10px 0;
+  z-index: 1000;
+}
+
+.navbar-container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  margin-right: -150px;
+}
+
+.navbar-brand {
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+  margin-left: 10px;
+}
+
+.navbar-logo {
+  width: 40px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.navbar-menu {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-item {
+  margin-right: 30px;
+  padding-top: 15px;
+}
+
+.navbar-link {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 5px 10px;
+}
+.navbar-user-icon {
+  background-color: #fff;
+  padding: 0;
+  width: 30px;
+  height: auto;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.navbar-link:hover {
+  background-color: #035778;
+  border: 64px;
+  padding: 20px;
+}
+
+/* Styles for the header */
+.header {
+  background: url("library-background.jpg") no-repeat center center/cover;
+  color: #fff;
+  text-align: center;
+  padding: 100px 20px;
+  margin-top: 60px;
+}
+
+.header h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.header p {
+  font-size: 24px;
+  margin-bottom: 40px;
+}
+
+.header .btn {
+  background-color: #28a1a7;
+  color: #fff;
+  padding: 20px 100px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 18px;
+}
+
+.header .btn:hover {
+  background-color: #218875;
+}
+
+/* Styles for the about section */
+.about,
+.services,
+.footer {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.about h2,
+.services h2,
+.footer h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.about p,
+.services .service p,
+.footer p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+/* Styles for the services section */
+.services {
+  display: flex;
+  justify-content: space-around;
+}
+
+.service {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 30%;
+  text-align: center;
+}
+
+.service h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+/* Styles for the footer */
+.footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
